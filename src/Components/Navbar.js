@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from '../img/croissant-logo.png'
+import logo from '../img/croissant-logo.png';
+import hamburger from '../img/hamburger.png'
 
 const Navbar = () => {
     return (
       <header>
         <div className="navbar">
-        <img src={logo} className="logo" alt="logo" height="33px" />
-          <nav>
+        <div className="mobile-menu">
+          <img src={logo} className="logo" alt="logo" height="33px" />
+          <img src={hamburger} className="hamburger" alt="menu" height="33px" />
+        </div>
+          <nav className="toggle">
             <div className="navbar-links">
               <a href="">Experiments</a>
               <a href="">Resources</a>

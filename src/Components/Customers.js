@@ -8,13 +8,13 @@ import parispousse from '../img/parispousse.png';
 const Customers = () => {
     return (
       <section className="customers">
-        <p>Our team members worked for</p>
+        <h4>Our team members worked for</h4>
         <div className="logos">
-            <img src={reeport} alt="Reeport" />
-            <img src={algolia} alt="Algolia" />
-            <img src={riseup} alt="Riseup" />
-            <img src={monbanquet} alt="monbanquet" />
-            <img src={parispousse} alt="ParisPousse" />
+            <img src={reeport} alt="Reeport" height="38px" />
+            <img src={algolia} alt="Algolia" height="30px" />
+            <img src={riseup} alt="Riseup" height="60px" />
+            <img src={monbanquet} alt="monbanquet" height="28px" />
+            <img src={parispousse} alt="ParisPousse" height="100px" />
         </div>
       </section>
     )

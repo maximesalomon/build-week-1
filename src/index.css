@@ -228,3 +228,11 @@ body {
 .container .hero .dashboard {
   margin-top: 50px;
 }
+.customers {
+  width: 800px;
+  margin: 50px auto 0;
+}
+.customers p {
+  color: #0014DD;
+  text-align: center;
+}

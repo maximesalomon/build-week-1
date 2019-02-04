@@ -1,5 +1,5 @@
 import React from 'react';
-import dashboard from '../img/dashboard.png'
+import dashboard from '../img/dashboard.png';
 
 const Hero = () => {
     return (

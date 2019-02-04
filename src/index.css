@@ -310,3 +310,19 @@ body {
   width: 300px;
   text-align: justify;
 }
+.footer-container {
+  background-color: white;
+}
+.footer-container .footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-container .footer .footerbar .footer-logo {
+  margin: 0 auto;
+  width: 150px;
+}
+.footer-container .footer .footerbar .copywright {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}

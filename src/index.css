@@ -186,33 +186,37 @@ body {
 }
 .container .hero {
   width: 1000px;
-  margin: 0 auto;
+  margin-left: 100px;
 }
 .container .hero .uvp {
   width: 800px;
+  margin-left: 100px;
   padding-top: 100px;
   color: #0014DD;
 }
 .container .hero .uvp .tagline {
+  text-align: center;
   font-size: 40px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 .container .hero .uvp .description {
+  text-align: center;
   margin-top: 30px;
   font-size: 20px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   line-height: 30px;
 }
 .container .hero .request {
-  margin-top: 20px;
-  width: 630px;
+  margin-top: 40px;
+  width: 600px;
+  margin-left: 200px;
   background-color: white;
   border: 3px solid #0014DD;
   border-radius: 30px;
 }
 .container .hero .request input {
-  width: 426px;
+  width: 416px;
   height: 55px;
   border: 1px solid white;
   border-radius: 25px 0 0 25px;
@@ -220,12 +224,13 @@ body {
 .container .hero .request button {
   background-color: #0014DD;
   height: 57px;
-  width: 200px;
+  width: 180px;
   border-radius: 30px;
   color: white;
 }
 .container .hero .dashboard {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 28px;
 }
 .customers {
   width: 800px;

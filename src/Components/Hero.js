@@ -11,7 +11,7 @@ const Hero = () => {
             & marketing ressources.</p>
         </div>
         <div className="request">
-          <input type="text" name="email" placeholder="Enter your email"></input>
+          <input type="text" name="email"></input>
           <button>Request access</button>
         </div>
         <div className="dashboard">

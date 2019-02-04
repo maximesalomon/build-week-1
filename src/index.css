@@ -139,7 +139,6 @@ input[type="reset"] {
 }
 html,
 body {
-  background-color: aliceblue;
   font-family: helvetica, arial, sans-serif;
 }
 .navbar-container {
@@ -154,14 +153,14 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.navbar-container header .navbar #logo {
-  color: white;
+.navbar-container header .navbar .logo {
+  padding-top: 6px;
 }
 .navbar-container header .navbar nav {
   display: flex;
 }
 .navbar-container header .navbar nav .navbar-links {
-  padding-top: 20px;
+  padding-top: 18px;
   margin-left: 50px;
 }
 .navbar-container header .navbar nav .navbar-links a {
@@ -171,7 +170,7 @@ body {
 }
 .navbar-container header .navbar nav .navbar-cta {
   position: relative;
-  left: 714px;
+  left: 592px;
 }
 .navbar-container header .navbar nav .navbar-cta .btn {
   background-color: white;
@@ -312,17 +311,16 @@ body {
 }
 .footer-container {
   background-color: white;
+  margin-top: 100px;
 }
 .footer-container .footer {
   width: 1200px;
   margin: 0 auto;
 }
-.footer-container .footer .footerbar .footer-logo {
+.footer-container .footer .footerbar {
+  width: 300px;
   margin: 0 auto;
-  width: 150px;
 }
 .footer-container .footer .footerbar .copywright {
-  margin: 0 auto;
-  width: 200px;
   text-align: center;
 }

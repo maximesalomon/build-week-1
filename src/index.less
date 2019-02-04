@@ -90,8 +90,11 @@ html, body {
 			}
 			nav {
 				display: flex;
+				.logo {
+					
+				}
 				.navbar-links {
-					padding-top: 16px;
+					padding-top: 20px;
 					margin-left: 50px;
 					a {
 						margin-left: 20px;
@@ -124,12 +127,49 @@ html, body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	.uvp {
-		margin-top: 100px;
-		color: #0014DD;
-		h1 {
-			font-family: poppins;
-			font-size: 40px;
+	background-color: white;
+	.hero {
+		width: 1000px;
+		margin: 0 auto;
+		.uvp {
+			width: 800px;
+			padding-top: 100px;
+			color: #0014DD;
+			.tagline {
+				font-size: 40px;
+				font-family: 'Poppins', Arial, Helvetica, sans-serif;
+				font-weight: bold;
+			}
+			.description {
+				margin-top: 30px;
+				font-size: 20px;
+				font-family: 'Poppins', Arial, Helvetica, sans-serif;
+				line-height: 30px;
+			}
+		}
+		.request {
+			margin-top: 20px;
+			width: 630px;
+			background-color: white;
+			border: 3px solid #0014DD;
+			border-radius: 30px;
+			input {
+				width: 426px;
+				height: 55px;
+				border: 1px solid white;
+				border-radius: 25px 0 0 25px;
+			}
+			button {
+				background-color: #0014DD;
+				height: 57px;
+				width: 200px;
+				border-radius: 30px;
+				color: white;
+			}
+		}
+		.dashboard {
+			margin-top: 50px;
 		}
 	}
+	
 }

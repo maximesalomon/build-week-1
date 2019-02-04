@@ -161,7 +161,7 @@ body {
   display: flex;
 }
 .navbar-container header .navbar nav .navbar-links {
-  padding-top: 16px;
+  padding-top: 20px;
   margin-left: 50px;
 }
 .navbar-container header .navbar nav .navbar-links a {
@@ -183,12 +183,48 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: white;
 }
-.container .uvp {
-  margin-top: 100px;
+.container .hero {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .hero .uvp {
+  width: 800px;
+  padding-top: 100px;
   color: #0014DD;
 }
-.container .uvp h1 {
-  font-family: poppins;
+.container .hero .uvp .tagline {
   font-size: 40px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.container .hero .uvp .description {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}
+.container .hero .request {
+  margin-top: 20px;
+  width: 630px;
+  background-color: white;
+  border: 3px solid #0014DD;
+  border-radius: 30px;
+}
+.container .hero .request input {
+  width: 426px;
+  height: 55px;
+  border: 1px solid white;
+  border-radius: 25px 0 0 25px;
+}
+.container .hero .request button {
+  background-color: #0014DD;
+  height: 57px;
+  width: 200px;
+  border-radius: 30px;
+  color: white;
+}
+.container .hero .dashboard {
+  margin-top: 50px;
 }

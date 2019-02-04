@@ -427,7 +427,7 @@ html, body {
 	.type {
 		width: 1200px;
 		.type-title {
-			margin-top: 100px;
+			margin-top: 60px;
 			h3 {
 				color: #0014DD;
 				font-size: 24px;
@@ -440,7 +440,6 @@ html, body {
 			flex-direction: column;
 			justify-content: space-between;
 			width: 90vw;
-			margin-top: 30px;
 			margin-left: 2%;
 
 			h4 {
@@ -496,21 +495,38 @@ html, body {
 
 /////////////////////////////////////////////////////////////////////////
 
-.footer-container {
-	background-color: white;
-	margin-top: 100px;
-	.footer {
-		width: 1200px;
-		margin: 0 auto;
-		.footerbar {
-			width: 300px;
-			margin: 0 auto;
-			.footer-logo {
-
+@media (max-width: 600px) {
+	.footer-container {
+		margin-top: 80px;
+		.team {
+			margin-left: 2%;
+			img {
+				width: 96%;
 			}
-			.copywright {
-				text-align: center;
-				margin-bottom: 20px;
+		}
+		.footerbar {
+			margin-left: 20%;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.footer-container {
+		background-color: white;
+		margin-top: 100px;
+		.footer {
+			width: 1200px;
+			margin: 0 auto;
+			.footerbar {
+				width: 300px;
+				margin: 0 auto;
+				.footer-logo {
+
+				}
+				.copywright {
+					text-align: center;
+					margin-bottom: 20px;
+				}
 			}
 		}
 	}

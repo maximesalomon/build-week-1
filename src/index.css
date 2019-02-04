@@ -225,6 +225,8 @@ body {
     font-size: 14px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     line-height: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .container .hero .request {
     margin-top: 40px;
@@ -373,78 +375,136 @@ body {
     justify-content: space-between;
   }
 }
-.process {
-  width: 1200px;
-  margin-top: 100px;
+@media (max-width: 600px) {
+  .process {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .process .mobile-none {
+    display: none;
+  }
+  .process h3 {
+    margin-top: 30px;
+    color: #0014DD;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .process .lorem {
+    margin-top: 10px;
+    text-align: justify;
+  }
 }
-.process h3 {
-  color: #0014DD;
-  font-size: 38px;
-  font-weight: bold;
+@media (min-width: 600px) {
+  .process {
+    width: 1200px;
+    margin-top: 100px;
+  }
+  .process h3 {
+    color: #0014DD;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .process .lorem {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'helvetica';
+    font-weight: lighter;
+  }
+  .process .growth-levers {
+    display: flex;
+  }
+  .process .growth-levers .gl-left {
+    width: 600px;
+  }
+  .process .growth-levers .gl-right {
+    width: 600px;
+    margin-left: 100px;
+  }
+  .process .growth-experiments {
+    margin-top: 80px;
+    display: flex;
+  }
+  .process .growth-experiments .ge-left {
+    width: 600px;
+  }
+  .process .growth-experiments .ge-right {
+    width: 600px;
+    margin-left: 100px;
+  }
+  .process .design-build-analyse {
+    display: flex;
+    margin-top: 80px;
+  }
+  .process .design-build-analyse .dba-left {
+    width: 600px;
+  }
+  .process .design-build-analyse .dba-right {
+    width: 600px;
+    margin-left: 100px;
+  }
 }
-.process .lorem {
-  margin-top: 20px;
-  font-size: 18px;
-  text-align: justify;
-  font-family: 'helvetica';
-  font-weight: lighter;
+@media (max-width: 600px) {
+  .type {
+    width: 1200px;
+  }
+  .type .type-title {
+    margin-top: 100px;
+  }
+  .type .type-title h3 {
+    color: #0014DD;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 2%;
+  }
+  .type .type-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+  .type .type-categories h4 {
+    color: #0014DD;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .type .type-categories p {
+    margin-top: 10px;
+    text-align: justify;
+    font-family: 'helvetica';
+    font-weight: lighter;
+  }
 }
-.process .growth-levers {
-  display: flex;
-}
-.process .growth-levers .gl-left {
-  width: 600px;
-}
-.process .growth-levers .gl-right {
-  width: 600px;
-  margin-left: 100px;
-}
-.process .growth-experiments {
-  margin-top: 80px;
-  display: flex;
-}
-.process .growth-experiments .ge-left {
-  width: 600px;
-}
-.process .growth-experiments .ge-right {
-  width: 600px;
-  margin-left: 100px;
-}
-.process .design-build-analyse {
-  display: flex;
-  margin-top: 80px;
-}
-.process .design-build-analyse .dba-left {
-  width: 600px;
-}
-.process .design-build-analyse .dba-right {
-  width: 600px;
-  margin-left: 100px;
-}
-.type {
-  width: 1200px;
-}
-.type .type-title h3 {
-  color: #0014DD;
-  font-size: 24px;
-  font-weight: bold;
-}
-.type .type-categories {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.type .type-categories h4 {
-  color: #0014DD;
-  font-size: 20px;
-  font-weight: bold;
-}
-.type .type-categories p {
-  margin-top: 10px;
-  width: 360px;
-  text-align: justify;
-  font-family: 'helvetica';
-  font-weight: lighter;
+@media (min-width: 600px) {
+  .type {
+    width: 1200px;
+  }
+  .type .type-title h3 {
+    color: #0014DD;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .type .type-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .type .type-categories h4 {
+    color: #0014DD;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .type .type-categories p {
+    margin-top: 10px;
+    width: 360px;
+    text-align: justify;
+    font-family: 'helvetica';
+    font-weight: lighter;
+  }
 }
 .footer-container {
   background-color: white;

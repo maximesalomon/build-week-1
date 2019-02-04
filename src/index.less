@@ -310,15 +310,32 @@ html, body {
 
 /////////////////////////////////////////////////////////////////////////
 
-
-.experiments {
-	width: 1200px;
-	margin-top: 100px;
-	.slider {
-		display: flex;
-		justify-content: space-between;
+@media (max-width: 600px) {
+	.experiments {
+		margin-top: 80px;
+		margin-left: 15%;
+		.slider {
+			display: flex;
+			flex-direction: column;
+			.mobile-none {
+				display: none;
+			}
+		}
 	}
 }
+
+@media (min-width: 600px) {
+	.experiments {
+		width: 1200px;
+		margin-top: 100px;
+		.slider {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+
 
 
 /////////////////////////////////////////////////////////////////////////

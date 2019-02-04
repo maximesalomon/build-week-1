@@ -350,13 +350,28 @@ body {
     align-items: center;
   }
 }
-.experiments {
-  width: 1200px;
-  margin-top: 100px;
+@media (max-width: 600px) {
+  .experiments {
+    margin-top: 80px;
+    margin-left: 15%;
+  }
+  .experiments .slider {
+    display: flex;
+    flex-direction: column;
+  }
+  .experiments .slider .mobile-none {
+    display: none;
+  }
 }
-.experiments .slider {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 600px) {
+  .experiments {
+    width: 1200px;
+    margin-top: 100px;
+  }
+  .experiments .slider {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .process {
   width: 1200px;

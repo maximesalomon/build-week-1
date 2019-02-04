@@ -255,7 +255,7 @@ body {
 }
 .experiments .slider {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .process {
   width: 1200px;
@@ -263,45 +263,50 @@ body {
 }
 .process h3 {
   color: #0014DD;
-  font-size: 24px;
+  font-size: 38px;
   font-weight: bold;
 }
 .process .lorem {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 18px;
+  text-align: justify;
+  font-family: 'helvetica';
+  font-weight: lighter;
 }
 .process .growth-levers {
   display: flex;
 }
 .process .growth-levers .gl-left {
-  margin-left: 100px;
-  width: 400px;
+  width: 600px;
 }
 .process .growth-levers .gl-right {
-  margin-left: 200px;
+  width: 600px;
+  margin-left: 100px;
 }
 .process .growth-experiments {
   margin-top: 80px;
   display: flex;
 }
+.process .growth-experiments .ge-left {
+  width: 600px;
+}
 .process .growth-experiments .ge-right {
+  width: 600px;
   margin-left: 100px;
-  width: 400px;
 }
 .process .design-build-analyse {
   display: flex;
   margin-top: 80px;
 }
 .process .design-build-analyse .dba-left {
-  margin-left: 100px;
-  width: 400px;
+  width: 600px;
 }
 .process .design-build-analyse .dba-right {
-  margin-left: 200px;
+  width: 600px;
+  margin-left: 100px;
 }
 .type {
   width: 1200px;
-  margin: 100px auto 0 auto;
 }
 .type .type-title h3 {
   color: #0014DD;
@@ -320,8 +325,10 @@ body {
 }
 .type .type-categories p {
   margin-top: 10px;
-  width: 300px;
+  width: 360px;
   text-align: justify;
+  font-family: 'helvetica';
+  font-weight: lighter;
 }
 .footer-container {
   background-color: white;

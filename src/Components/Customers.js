@@ -12,9 +12,9 @@ const Customers = () => {
         <div className="logos">
             <img src={reeport} alt="Reeport" height="38px" />
             <img src={algolia} alt="Algolia" height="30px" />
-            <img src={riseup} alt="Riseup" height="60px" />
+            <img src={riseup} alt="Riseup" height="60px" className="mobile-none" />
             <img src={monbanquet} alt="monbanquet" height="28px" />
-            <img src={parispousse} alt="ParisPousse" height="100px" />
+            <img src={parispousse} alt="ParisPousse" height="100px" className="mobile-none" />
         </div>
       </section>
     )

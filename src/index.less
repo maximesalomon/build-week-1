@@ -259,22 +259,48 @@ html, body {
 ///   CUSTOMERS   ///
 
 /////////////////////////////////////////////////////////////////////////
-
-.customers {
-	width: 800px;
-	margin-left: 200px;
-	margin-top: 80px;
-	h4 {
-		text-align: center;
-		color: #0014DD;
-		font-size: 20px;
-		font-weight: bold;
+@media (max-width: 600px) {
+	.customers {
+		margin-top: 80px;
+		h4 {
+			text-align: center;
+			color: #0014DD;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.logos {
+			margin-top: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			img {
+				padding-top: 20px;
+			}
+			.mobile-none {
+				display: none;
+			}
+		}
 	}
-	.logos {
-		margin-top: 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+}
+
+@media (min-width: 600px) {
+	.customers {
+		width: 800px;
+		margin-left: 200px;
+		margin-top: 80px;
+		h4 {
+			text-align: center;
+			color: #0014DD;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.logos {
+			margin-top: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar.js';
 import Hero from './Components/Hero.js';
 import Customers from './Components/Customers.js';
+import Process from './Components/Process.js';
 
 class App extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class App extends React.Component {
                 <div className="container">
                     <Hero />
                     <Customers />
+                    <Process />
                 </div>
             </div>
         )

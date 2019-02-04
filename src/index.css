@@ -236,3 +236,45 @@ body {
   color: #0014DD;
   text-align: center;
 }
+.process {
+  width: 1200px;
+  margin-top: 100px;
+}
+.process h3 {
+  color: #0014DD;
+  font-size: 24px;
+  font-weight: bold;
+}
+.process .lorem {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.process .growth-levers {
+  display: flex;
+}
+.process .growth-levers .gl-left {
+  margin-left: 100px;
+  width: 400px;
+}
+.process .growth-levers .gl-right {
+  margin-left: 200px;
+}
+.process .growth-experiments {
+  margin-top: 80px;
+  display: flex;
+}
+.process .growth-experiments .ge-right {
+  margin-left: 100px;
+  width: 400px;
+}
+.process .design-build-analyse {
+  display: flex;
+  margin-top: 80px;
+}
+.process .design-build-analyse .dba-left {
+  margin-left: 100px;
+  width: 400px;
+}
+.process .design-build-analyse .dba-right {
+  margin-left: 200px;
+}

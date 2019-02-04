@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar.js';
 import Hero from './Components/Hero.js';
 import Customers from './Components/Customers.js';
 import Process from './Components/Process.js';
+import Type from './Components/Type.js';
+import Experiments from './Components/Experiments.js';
 
 class App extends React.Component {
     render() {
@@ -12,7 +14,9 @@ class App extends React.Component {
                 <div className="container">
                     <Hero />
                     <Customers />
+                    <Experiments />
                     <Process />
+                    <Type />
                 </div>
             </div>
         )

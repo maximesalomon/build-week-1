@@ -19,10 +19,11 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,16 +48,88 @@ table {
 	border-spacing: 0;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+///   OVERALL   ///
+
+/////////////////////////////////////////////////////////////////////////
+
+html, body {
+	background-color: aliceblue;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+///   NAVBAR   ///
+
+/////////////////////////////////////////////////////////////////////////
+
+.navbar-container {
+	background-color: white;
+	header {
+		width: 1200px;
+		margin: 0 auto;
+		.navbar {
+			display: flex;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			#logo {
+				color: white;
+			}
+			nav {
+				display: flex;
+				.navbar-links {
+					padding-top: 16px;
+					margin-left: 50px;
+					a {
+						margin-left: 20px;
+						text-decoration: none;
+						color: #0014DD;
+					}
+				}
+				.navbar-cta {
+					position: relative;
+					left: 714px;
+					.btn {
+						background-color: white;
+						color: #0014DD;
+						padding: 16px;
+						border-radius: 25px;
+						border: 1px solid #0014DD;
+					}
+				}
+			}
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+///   HERO   ///
+
 /////////////////////////////////////////////////////////////////////////
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+	width: 1200px;
+	margin: 0 auto;
+	.uvp {
+		margin-top: 100px;
+		color: #0014DD;
+		h1 {
+			font-family: poppins;
+			font-size: 40px;
+		}
+	}
 }
-
-.navbar {
-    display: flex;
-    nav {
-        display: flex;
-    }
-  }

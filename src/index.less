@@ -459,21 +459,43 @@ html, body {
 
 /////////////////////////////////////////////////////////////////////////
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	.experiments {
 		margin-top: 80px;
-		margin-left: 15%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 		.slider {
 			display: flex;
-			flex-direction: column;
-			.mobile-none {
-				display: none;
-			}
+			display: flex;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+		.scroll::-webkit-scrollbar {
+			display: none;
 		}
 	}
 }
 
-@media (min-width: 801px) {
+@media (min-width: 601px) {
+	.experiments {
+		margin-top: 50px;
+		.slider {
+			width: 94%;
+			margin-left: 10%;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+		.scroll::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
 	.experiments {
 		width: 1200px;
 		margin-top: 100px;
@@ -572,7 +594,6 @@ html, body {
 
 @media (max-width: 800px) {
 	.type {
-		width: 1200px;
 		.type-title {
 			margin-top: 60px;
 			h3 {

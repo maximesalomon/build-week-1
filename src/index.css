@@ -526,14 +526,18 @@ body {
 @media (min-width: 1200px) {
   .experiments {
     width: 1200px;
+    width: 100%;
     margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .experiments .slider {
     display: flex;
     justify-content: space-between;
+    margin-left: 0px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .process {
     margin-top: 50px;
     margin-left: 5%;
@@ -553,10 +557,38 @@ body {
     text-align: justify;
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 601px) {
+  .process {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .process .mobile-none {
+    display: none;
+  }
+  .process h3 {
+    margin-top: 30px;
+    color: #0014DD;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .process .lorem {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'helvetica';
+    font-weight: lighter;
+  }
+}
+@media (min-width: 1200px) {
   .process {
     width: 1200px;
     margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .process .mobile-none {
+    display: block;
   }
   .process h3 {
     color: #0014DD;
@@ -603,7 +635,7 @@ body {
     margin-left: 100px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .type .type-title {
     margin-top: 60px;
   }
@@ -633,7 +665,44 @@ body {
     font-weight: lighter;
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 601px) {
+  .type {
+    margin-top: 50px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .type .type-title h3 {
+    color: #0014DD;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .type .type-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .type .type-categories .category {
+    margin-left: 10px;
+  }
+  .type .type-categories .category:first-child {
+    margin-left: 0px;
+  }
+  .type .type-categories h4 {
+    color: #0014DD;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .type .type-categories p {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 100%;
+    text-align: justify;
+    font-family: 'helvetica';
+    font-weight: lighter;
+  }
+}
+@media (min-width: 1200px) {
   .type {
     width: 1200px;
   }

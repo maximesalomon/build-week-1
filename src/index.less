@@ -498,10 +498,14 @@ html, body {
 @media (min-width: 1200px) {
 	.experiments {
 		width: 1200px;
+		width: 100%;
 		margin-top: 100px;
+		margin-left: 0px;
+		margin-right: 0px;
 		.slider {
 			display: flex;
 			justify-content: space-between;
+			margin-left: 0px;
 		}
 	}
 }
@@ -514,7 +518,7 @@ html, body {
 
 /////////////////////////////////////////////////////////////////////////
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	.process {
 		margin-top: 50px;
 		margin-left: 5%;
@@ -535,10 +539,39 @@ html, body {
 	}
 }
 
-@media (min-width: 801px) {
+@media (min-width: 601px) {
+	.process {
+		margin-top: 50px;
+		margin-left: 20%;
+		margin-right: 20%;
+		.mobile-none {
+			display: none;
+		}
+		h3 {
+			margin-top: 30px;
+			color: #0014DD;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.lorem {
+			margin-top: 20px;
+			font-size: 18px;
+			text-align: justify;
+			font-family: 'helvetica';
+			font-weight: lighter;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
 	.process {
 		width: 1200px;
 		margin-top: 100px;
+		margin-left: 0px;
+		margin-right: 0px;
+		.mobile-none {
+			display: block;
+		}
 		h3 {
 			color: #0014DD;
 			font-size: 38px;
@@ -592,7 +625,7 @@ html, body {
 
 /////////////////////////////////////////////////////////////////////////
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	.type {
 		.type-title {
 			margin-top: 60px;
@@ -626,7 +659,48 @@ html, body {
 	}
 }
 
-@media (min-width: 801px) {
+
+@media (min-width: 601px) {
+	.type {
+		margin-top: 50px;
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+		.type-title {
+			h3 {
+				color: #0014DD;
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+		.type-categories {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 30px;
+			.category {
+				margin-left: 10px;
+				&:first-child {
+					margin-left: 0px;
+				}
+			}
+			h4 {
+				color: #0014DD;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p {
+				margin-top: 10px;
+				margin-right: 20px;
+				width: 100%;
+				text-align: justify;
+				font-family: 'helvetica';
+				font-weight: lighter;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
 	.type {
 		width: 1200px;
 		.type-title {

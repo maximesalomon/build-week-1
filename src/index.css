@@ -578,6 +578,8 @@ body {
     display: flex;
   }
   .experiments .slider {
+    width: 100%;
+    margin-right: 0px;
     display: flex;
     justify-content: space-between;
     margin-left: 0px;
@@ -633,20 +635,28 @@ body {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .process .number {
+    margin-top: 13px;
+  }
   .process .mobile-none {
     display: block;
   }
   .process h3 {
+    margin-top: 20px;
     color: #0014DD;
-    font-size: 38px;
-    font-weight: bold;
+    font-size: 34px;
+    font-weight: 600;
+    width: 500px;
+    line-height: 1.3;
   }
   .process .lorem {
     margin-top: 20px;
-    font-size: 18px;
-    text-align: justify;
-    font-family: 'helvetica';
-    font-weight: lighter;
+    font-size: 16px;
+    color: #62658C;
+    font-family: 'poppins';
+    font-weight: 300;
+    width: 500px;
+    line-height: 1.8;
   }
   .process .growth-levers {
     display: flex;
@@ -656,7 +666,6 @@ body {
   }
   .process .growth-levers .gl-right {
     width: 600px;
-    margin-left: 100px;
   }
   .process .growth-experiments {
     margin-top: 80px;
@@ -666,8 +675,8 @@ body {
     width: 600px;
   }
   .process .growth-experiments .ge-right {
-    width: 600px;
     margin-left: 100px;
+    width: 600px;
   }
   .process .design-build-analyse {
     display: flex;
@@ -678,7 +687,6 @@ body {
   }
   .process .design-build-analyse .dba-right {
     width: 600px;
-    margin-left: 100px;
   }
 }
 @media (max-width: 600px) {

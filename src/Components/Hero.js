@@ -10,13 +10,6 @@ let heroContent = {
   button_text: "Request access",
 };
 
-const Container = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const Square = posed.div({
   idle: { scale: 1 },
   hovered: { scale: 1.1 }

@@ -35,8 +35,8 @@ class Navbar extends React.Component {
             ? (
               <nav className="dropdown">
                 <div className="navbar-links">
-                  <a href="">Experiments</a>
-                  <a href="">Resources</a>
+                  <a href="/">Experiments</a>
+                  <a href="/">Resources</a>
                 </div>
                 <div className='navbar-cta'>
                   <button className='btn'>{navbarContent.phone_number}</button>
@@ -46,8 +46,8 @@ class Navbar extends React.Component {
             : (
               <nav className="dropdown toggle">
                 <div className="navbar-links">
-                  <a href="">Experiments</a>
-                  <a href="">Resources</a>
+                  <a href="/">Experiments</a>
+                  <a href="/">Resources</a>
                 </div>
                 <div className='navbar-cta'>
                   <button className='btn'>{navbarContent.phone_number}</button>

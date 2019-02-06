@@ -25,7 +25,7 @@ class Hero extends React.Component {
   state = { hovering: false };
   render() {
     return (
-      <div>
+      <div className="container">
         <section className="hero">
           <div className="uvp">
             <h1 className="tagline">{heroContent.tagline}</h1>

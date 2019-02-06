@@ -353,6 +353,9 @@ body {
   }
 }
 @media (min-width: 801px) {
+  .container .heroImage {
+    position: absolute;
+  }
   .container .hero .uvp {
     padding-top: 70px;
     color: #0014DD;
@@ -472,7 +475,7 @@ body {
   }
   .container .hero .dashboard {
     margin-top: 80px;
-    margin-left: 28px;
+    margin-left: 0px;
     margin-right: 0px;
   }
   .container .hero .dashboard .mobileDashboard {

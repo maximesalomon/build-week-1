@@ -1,7 +1,6 @@
 import React from 'react';
 import team from '../img/team-illustration.png';
 import logo from '../img/croissant-logo.png'
-import footerImage from '../img/footer-image.png';
 
 const Footer = () => {
     return (

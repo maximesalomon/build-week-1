@@ -25,25 +25,27 @@ class Hero extends React.Component {
   state = { hovering: false };
   render() {
     return (
-      <section className="hero">
-        <div className="uvp">
-          <h1 className="tagline">{heroContent.tagline}</h1>
-          <p className="description">{heroContent.description}</p>
-        </div>
-        <div className="request">
-          <input type="text" name="email"></input>
-          <button>{heroContent.button_text}</button>
-        </div>
-        <div className="dashboard">
-          <StyledSquare
-            className="desktopDashboard"
-            pose={this.state.hovering ? "hovered" : "idle"}
-            onMouseEnter={() => this.setState({ hovering: true })}
-            onMouseLeave={() => this.setState({ hovering: false })}
-          />
-          <img className="mobileDashboard" src={dashboard} alt="Dashboard" />
-        </div>
-      </section>
+      <div>
+        <section className="hero">
+          <div className="uvp">
+            <h1 className="tagline">{heroContent.tagline}</h1>
+            <p className="description">{heroContent.description}</p>
+          </div>
+          <div className="request">
+            <input type="text" name="email"></input>
+            <button>{heroContent.button_text}</button>
+          </div>
+          <div className="dashboard">
+            <StyledSquare
+              className="desktopDashboard"
+              pose={this.state.hovering ? "hovered" : "idle"}
+              onMouseEnter={() => this.setState({ hovering: true })}
+              onMouseLeave={() => this.setState({ hovering: false })}
+            />
+            <img className="mobileDashboard" src={dashboard} alt="Dashboard" />
+          </div>
+        </section>
+      </div>
     )
   }
 };  

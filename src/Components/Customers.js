@@ -5,10 +5,14 @@ import riseup from '../img/riseup.png';
 import monbanquet from '../img/monbanquet.png';
 import parispousse from '../img/parispousse.png';
 
+let customersContent = {
+  text: "Our team members worked for"
+}
+
 const Customers = () => {
     return (
       <section className="customers">
-        <h4>Our team members worked for</h4>
+        <h4>{customersContent.text}</h4>
         <div className="logos">
             <img src={reeport} alt="Reeport" height="38px" />
             <img src={algolia} alt="Algolia" height="30px" />

@@ -140,6 +140,15 @@ input[type="reset"] {
 html,
 body {
   font-family: helvetica, arial, sans-serif;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 800px) {
   .navbar {
@@ -218,10 +227,17 @@ body {
     border-radius: 25px;
     border: 1px solid #0014DD;
   }
+  .navbar-container header .navbar nav .navbar-cta .btn:hover {
+    background-color: #0014DD;
+    color: white;
+  }
 }
 @media (min-width: 1200px) {
   .navbar-container {
     background-color: white;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
   }
   .navbar-container header {
     width: 1200px;
@@ -241,6 +257,9 @@ body {
   .navbar-container header .navbar nav {
     display: flex;
   }
+  .navbar-container header .navbar nav .dropdownMobile {
+    display: none;
+  }
   .navbar-container header .navbar nav .navbar-links {
     padding-top: 18px;
     margin-left: 50px;
@@ -249,6 +268,10 @@ body {
     margin-left: 20px;
     text-decoration: none;
     color: #0014DD;
+  }
+  .navbar-container header .navbar nav .navbar-links a:hover {
+    border-bottom: 3px solid #0014DD;
+    padding-bottom: 4px;
   }
   .navbar-container header .navbar nav .navbar-cta {
     position: relative;
@@ -260,6 +283,10 @@ body {
     padding: 16px;
     border-radius: 25px;
     border: 1px solid #0014DD;
+  }
+  .navbar-container header .navbar nav .navbar-cta .btn:hover {
+    background-color: #0014DD;
+    color: white;
   }
 }
 @media (max-width: 800px) {
@@ -312,6 +339,9 @@ body {
   }
   .container .hero .dashboard img {
     width: 100%;
+  }
+  .container .hero .dashboard .desktopDashboard {
+    display: none;
   }
 }
 @media (min-width: 801px) {
@@ -367,6 +397,9 @@ body {
   .container .hero .dashboard img {
     width: 100%;
   }
+  .container .hero .dashboard .desktopDashboard {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -420,11 +453,21 @@ body {
     width: 180px;
     border-radius: 30px;
     color: white;
+    border: 2px solid #0014DD;
+  }
+  .container .hero .request button:hover {
+    border: 1px solid white;
   }
   .container .hero .dashboard {
     margin-top: 80px;
     margin-left: 28px;
     margin-right: 0px;
+  }
+  .container .hero .dashboard .mobileDashboard {
+    display: none;
+  }
+  .container .hero .dashboard .desktopDashboard {
+    display: block;
   }
 }
 @media (max-width: 800px) {
@@ -530,6 +573,9 @@ body {
     margin-top: 100px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+  .experiments .cards {
+    display: flex;
   }
   .experiments .slider {
     display: flex;

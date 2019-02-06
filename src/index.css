@@ -200,7 +200,7 @@ body {
     padding-bottom: 10px;
   }
   .navbar-container header .navbar .logo {
-    margin-left: 20px;
+    margin-left: 0px;
     padding-top: 6px;
   }
   .navbar-container header .navbar .hamburger {
@@ -280,7 +280,7 @@ body {
   }
   .navbar-container header .navbar nav .navbar-cta {
     position: relative;
-    left: 570px;
+    left: 591px;
   }
   .navbar-container header .navbar nav .navbar-cta .btn {
     font-weight: 300;
@@ -802,6 +802,7 @@ body {
     text-align: justify;
     font-family: 'helvetica';
     font-weight: lighter;
+    margin-right: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -822,17 +823,21 @@ body {
   .footer-container {
     background-color: white;
     margin-top: 100px;
+    margin-bottom: 20px;
   }
-  .footer-container .footer {
-    width: 1200px;
-    margin: 0 auto;
+  .footer-container .team {
+    margin-left: 222px;
   }
-  .footer-container .footer .footerbar {
+  .footer-container .footerbar {
     width: 300px;
     margin: 0 auto;
   }
-  .footer-container .footer .footerbar .copywright {
-    text-align: center;
-    margin-bottom: 20px;
+  .footer-container .footerbar .footer-logo {
+    margin-left: 30px;
+    margin-bottom: 4px;
+  }
+  .footer-container .footerbar .copyright {
+    color: #62658C;
+    font-weight: 300;
   }
 }

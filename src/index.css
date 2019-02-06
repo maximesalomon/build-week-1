@@ -643,7 +643,7 @@ body {
 @media (min-width: 1200px) {
   .process {
     width: 1200px;
-    margin-top: 100px;
+    margin-top: 160px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -680,7 +680,7 @@ body {
     width: 600px;
   }
   .process .growth-experiments {
-    margin-top: 80px;
+    margin-top: 160px;
     display: flex;
   }
   .process .growth-experiments .ge-left {
@@ -692,7 +692,7 @@ body {
   }
   .process .design-build-analyse {
     display: flex;
-    margin-top: 80px;
+    margin-top: 160px;
   }
   .process .design-build-analyse .dba-left {
     width: 600px;
@@ -771,7 +771,7 @@ body {
 @media (min-width: 1200px) {
   .type {
     width: 1200px;
-    margin-top: 140px;
+    margin-top: 160px;
   }
   .type .type-title h3 {
     text-align: center;
@@ -802,7 +802,6 @@ body {
     text-align: justify;
     font-family: 'helvetica';
     font-weight: lighter;
-    margin-right: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -822,11 +821,14 @@ body {
 @media (min-width: 801px) {
   .footer-container {
     background-color: white;
-    margin-top: 100px;
     margin-bottom: 20px;
+    width: 1200px;
+    margin: 0 auto;
   }
   .footer-container .team {
-    margin-left: 222px;
+    margin-top: 160px;
+    width: 100%;
+    margin-left: 5%;
   }
   .footer-container .footerbar {
     width: 300px;

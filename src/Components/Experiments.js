@@ -9,9 +9,13 @@ const Experiments = () => {
       <section className="experiments">
         <div className="slider">
             <div clasName="card" data-card="1"><img src={experiments1} /></div>
-            <div clasName="card" data-card="2"><img className="mobile-none" src={experiments2} /></div>
-            <div clasName="card" data-card="3"><img className="mobile-none" src={experiments3} /></div>
-            <div clasName="card" data-card="4"><img className="mobile-none" src={experiments4} /></div>
+            <div clasName="card" data-card="2"><img src={experiments2} /></div>
+            <div clasName="card" data-card="3"><img src={experiments3} /></div>
+            <div clasName="card" data-card="4"><img src={experiments4} /></div>
+            <div clasName="card" data-card="1"><img src={experiments1} /></div>
+            <div clasName="card" data-card="2"><img src={experiments2} /></div>
+            <div clasName="card" data-card="3"><img src={experiments3} /></div>
+            <div clasName="card" data-card="4"><img src={experiments4} /></div>
         </div>
       </section>
     )

@@ -191,6 +191,8 @@ body {
 @media (min-width: 801px) {
   .navbar-container {
     background-color: white;
+    z-index: 1;
+    border-top: 10px solid #0014DD;
   }
   .navbar-container header .navbar {
     display: flex;
@@ -238,6 +240,8 @@ body {
     position: fixed;
     margin: 0 auto;
     width: 100%;
+    z-index: 1;
+    border-top: 10px solid #0014DD;
   }
   .navbar-container header {
     width: 1200px;
@@ -245,8 +249,8 @@ body {
   }
   .navbar-container header .navbar {
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .navbar-container header .navbar .logo {
     padding-top: 6px;
@@ -267,10 +271,11 @@ body {
   .navbar-container header .navbar nav .navbar-links a {
     margin-left: 20px;
     text-decoration: none;
+    font-weight: 300;
     color: #0014DD;
   }
   .navbar-container header .navbar nav .navbar-links a:hover {
-    border-bottom: 3px solid #0014DD;
+    border-bottom: 4px solid #0014DD;
     padding-bottom: 4px;
   }
   .navbar-container header .navbar nav .navbar-cta {
@@ -278,6 +283,7 @@ body {
     left: 570px;
   }
   .navbar-container header .navbar nav .navbar-cta .btn {
+    font-weight: 300;
     background-color: white;
     color: #0014DD;
     padding: 16px;
@@ -301,6 +307,8 @@ body {
     font-weight: bold;
   }
   .container .hero .uvp .description {
+    color: #62658C;
+    font-weight: 300;
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
@@ -346,7 +354,7 @@ body {
 }
 @media (min-width: 801px) {
   .container .hero .uvp {
-    padding-top: 50px;
+    padding-top: 70px;
     color: #0014DD;
   }
   .container .hero .uvp .tagline {
@@ -356,6 +364,8 @@ body {
     font-weight: bold;
   }
   .container .hero .uvp .description {
+    color: #62658C;
+    font-weight: 300;
     max-width: 1000px;
     margin-left: 5%;
     margin-right: 5%;
@@ -414,7 +424,7 @@ body {
   .container .hero .uvp {
     width: 800px;
     margin-left: 100px;
-    padding-top: 100px;
+    padding-top: 160px;
     color: #0014DD;
   }
   .container .hero .uvp .tagline {
@@ -424,15 +434,17 @@ body {
     font-weight: bold;
   }
   .container .hero .uvp .description {
+    color: #62658C;
+    font-weight: 300;
     margin: 0;
     text-align: center;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     line-height: 30px;
   }
   .container .hero .request {
-    margin-top: 40px;
+    margin-top: 50px;
     width: 600px;
     margin-left: 200px;
     background-color: white;
@@ -441,7 +453,7 @@ body {
   }
   .container .hero .request input {
     width: 416px;
-    height: 55px;
+    height: 44px;
     border: 1px solid white;
     border-radius: 25px 0 0 25px;
   }
@@ -449,7 +461,7 @@ body {
     background-color: #0014DD;
     position: relative;
     left: -2px;
-    height: 57px;
+    height: 48px;
     width: 180px;
     border-radius: 30px;
     color: white;

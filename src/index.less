@@ -123,6 +123,8 @@ html, body {
 @media (min-width: 801px) {
 	.navbar-container {
 		background-color: white;
+		z-index: 1;
+		border-top: 10px solid #0014DD;
 		header {
 			.navbar {
 				display: flex;
@@ -173,13 +175,15 @@ html, body {
 		position: fixed;
 		margin: 0 auto;
 		width: 100%;
+		z-index: 1;
+		border-top: 10px solid #0014DD;
 		header {
 			width: 1200px;
 			margin: 0 auto;
 			.navbar {
 				display: flex;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-top: 12px;
+				padding-bottom: 12px;
 				.logo {
 					padding-top: 6px;
 				}
@@ -197,9 +201,10 @@ html, body {
 						a {
 							margin-left: 20px;
 							text-decoration: none;
+							font-weight: 300;
 							color: #0014DD;
 							&:hover {
-								border-bottom: 3px solid #0014DD;
+								border-bottom: 4px solid #0014DD;
 								padding-bottom: 4px;
 							}
 						}
@@ -208,6 +213,7 @@ html, body {
 						position: relative;
 						left: 570px;
 						.btn {
+							font-weight: 300;
 							background-color: white;
 							color: #0014DD;
 							padding: 16px;
@@ -244,6 +250,8 @@ html, body {
 					font-weight: bold;
 				}
 				.description {
+					color: #62658C;
+					font-weight: 300;
 					text-align: center;
 					margin-top: 30px;
 					font-size: 14px;
@@ -295,7 +303,7 @@ html, body {
 	.container {
 		.hero {
 			.uvp {
-				padding-top: 50px;
+				padding-top: 70px;
 				color: #0014DD;
 				.tagline {
 					text-align: center;
@@ -304,6 +312,8 @@ html, body {
 					font-weight: bold;
 				}
 				.description {
+					color: #62658C;
+					font-weight: 300;
 					max-width: 1000px;
 					margin-left: 5%;
 					margin-right: 5%;
@@ -364,7 +374,7 @@ html, body {
 			.uvp {
 				width: 800px;
 				margin-left: 100px;
-				padding-top: 100px;
+				padding-top: 160px;
 				color: #0014DD;
 				.tagline {
 					text-align: center;
@@ -373,16 +383,18 @@ html, body {
 					font-weight: bold;
 				}
 				.description {
+					color: #62658C;
+					font-weight: 300;
 					margin: 0;
 					text-align: center;
 					margin-top: 30px;
-					font-size: 20px;
+					font-size: 18px;
 					font-family: 'Poppins', Arial, Helvetica, sans-serif;
 					line-height: 30px;
 				}
 			}
 			.request {
-				margin-top: 40px;
+				margin-top: 50px;
 				width: 600px;
 				margin-left: 200px;
 				background-color: white;
@@ -390,7 +402,7 @@ html, body {
 				border-radius: 30px;
 				input {
 					width: 416px;
-					height: 55px;
+					height: 44px;
 					border: 1px solid white;
 					border-radius: 25px 0 0 25px;
 				}
@@ -398,7 +410,7 @@ html, body {
 					background-color: #0014DD;
 					position: relative;
 					left: -2px;
-					height: 57px;
+					height: 48px;
 					width: 180px;
 					border-radius: 30px;
 					color: white;

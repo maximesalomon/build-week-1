@@ -4,11 +4,11 @@ import axios from 'axios';
 import logo from '../img/croissant-logo.png';
 import hamburger from '../img/hamburger.png'
 
-let navbarContent = {
-  link_1: "Experiments",
-  link_2: "Resources",
-  phone_number: "+33 6 50 08 49 44",
-};
+// let navbarContent = {
+//   link_1: "Experiments",
+//   link_2: "Resources",
+//   phone_number: "+33 6 50 08 49 44",
+// };
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -18,11 +18,25 @@ class Navbar extends React.Component {
     };
     this.toggle = this.toggle.bind(this);
   }
-
+  componentDidMount() {
+    axios.get("http://localhost:5000/content")
+    .then(res => {
+      this.setState(
+          {
+            link_1: res.data.navbar.link_1,
+            link_2: res.data.navbar.link_2,
+            phone_number: res.data.navbar.phone_number,
+          }
+        )
+        console.log(this.state);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }
   toggle() {
     this.setState(e => ({ toggleDropdown: !e.toggleDropdown}))
   }
-
   render() {
     return (
       /* https://reactjs.org/docs/handling-events.html */
@@ -37,22 +51,22 @@ class Navbar extends React.Component {
             ? (
               <nav className="dropdown">
                 <div className="navbar-links">
-                  <a href="/">Experiments</a>
-                  <a href="/">Resources</a>
+                  <a href="/">{this.state.link_1}</a>
+                  <a href="/">{this.state.link_2}</a>
                 </div>
                 <div className='navbar-cta'>
-                  <button className='btn'>{navbarContent.phone_number}</button>
+                  <button className='btn'>{this.state.phone_number}</button>
                 </div>
               </nav>
             )
             : (
               <nav className="dropdown toggle">
                 <div className="navbar-links">
-                  <a href="/">Experiments</a>
-                  <a href="/">Resources</a>
+                  <a href="/">{this.state.link_1}</a>
+                  <a href="/">{this.state.link_2}</a>
                 </div>
                 <div className='navbar-cta'>
-                  <button className='btn'>{navbarContent.phone_number}</button>
+                  <button className='btn'>{this.state.phone_number}</button>
                 </div>
               </nav>
             )

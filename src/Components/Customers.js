@@ -7,22 +7,19 @@ import riseup from '../img/riseup.png';
 import monbanquet from '../img/monbanquet.png';
 import parispousse from '../img/parispousse.png';
 
-let customersContent = {
-  text: "Our team members worked for"
-}
-
 class Customers extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      text: []
+      
     }
   }
     componentDidMount() {
-      axios.get("http://localhost:5000/navbar")
+      axios.get("http://localhost:5000/content")
       .then(res => {
-        this.setState({text: res.data.link_1})
-        console.log(res.data.link_1)
+        this.setState(
+          {customers_title: res.data.customers.title}
+          )
       })
       .catch(err => {
         console.log(err);
@@ -31,7 +28,7 @@ class Customers extends React.Component {
     render() {
       return (
         <section className="customers">
-          <h4>{this.state.text}</h4>
+          <h4>{this.state.customers_title}</h4>
           <div className="logos">
               <img src={reeport} alt="Reeport" height="38px" />
               <img src={algolia} alt="Algolia" height="30px" />

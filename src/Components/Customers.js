@@ -7,6 +7,32 @@ import riseup from '../img/riseup.png';
 import monbanquet from '../img/monbanquet.png';
 import parispousse from '../img/parispousse.png';
 
+// var clearbit = require('clearbit')('sk_682083b708dd971ac5ef22661babf1cd');
+
+// clearbit.Enrichment.find({email: 'maxime@croissant.io', stream: true})
+//   .then(function (response) {
+//     var person  = response.person;
+//     var company = response.company;
+
+//     console.log('Person ', person);
+//     console.log('Company: ', company);
+//   })
+//   .catch(function (err) {
+//     console.error(err);
+//   });
+
+// var clearbit = require('clearbit')('sk_682083b708dd971ac5ef22661babf1cd');
+
+// clearbit.Reveal.find({
+//     ip: '212.157.0.209'
+//   })
+//   .then(function (result) {
+//     console.log('Result', result);
+//   })
+//   .catch(function (err) {
+//     console.error(err);
+//   });
+
 class Customers extends React.Component {
   constructor(props){
     super(props)

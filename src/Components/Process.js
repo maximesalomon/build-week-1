@@ -36,7 +36,7 @@ class Process extends React.Component {
       <section className="process">
         <div className="growth-levers">
           <div className="gl-left">
-          <img className="number" src={btn1}></img>
+          <img className="number" src={btn1} alt="step"></img>
             <h3>{this.state.step1_title}</h3>
             <p className="lorem">{this.state.step1_content}</p>
           </div>
@@ -45,14 +45,14 @@ class Process extends React.Component {
         <div className="growth-experiments">
           <div className="ge-left mobile-none"><img src={process2} alt="coworkers" height="270px" width="600px" /></div>
           <div className="ge-right">
-          <img className="number" src={btn2}></img>
+          <img className="number" src={btn2} alt="step"></img>
             <h3>{this.state.step2_title}</h3>
             <p className="lorem">{this.state.step2_content}</p>
           </div>
         </div>
         <div className="design-build-analyse">
           <div className="dba-left">
-          <img className="number" src={btn3}></img>
+          <img className="number" src={btn3} alt="step"></img>
             <h3>{this.state.step3_title}</h3>
             <p className="lorem">{this.state.step3_content}</p>
           </div>

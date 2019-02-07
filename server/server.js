@@ -23,7 +23,7 @@ server.get('/content', (req, res) => {
             btn_cta: "Request access"
         },
         customers: {
-            title: "Our team mhyhhrhembers worked for",
+            title: "Our team members worked for",
         },
         process: {
             step1: {

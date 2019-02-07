@@ -28,7 +28,6 @@ class Navbar extends React.Component {
             phone_number: res.data.navbar.phone_number,
           }
         )
-        console.log(this.state);
     })
     .catch(err => {
       console.log(err);

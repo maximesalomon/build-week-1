@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="team"><img src={team} alt="croissant-team" /></div>
         <div className="footerbar">
           <div className="footer-logo"><img src={logo} alt="logo" height="33px" /></div>
-          <div className="copyright"><p>2019 Croissant - Made with <span role="img" area-label="heart">❤️</span> in <span role="img" are-label="earth">🌍</span></p></div>
+          <div className="copyright"><p>2019 Croissant - Made with love in Paris, France</p></div>
           {/* <img className='footerImage' src={footerImage}></img> */}
         </div>
       </footer>

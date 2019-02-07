@@ -19,8 +19,8 @@ Goals for Tuesday:
 - [X] Document your project within the Readme file in Your Github repo. Prepare a notice what the project is about, what tools and frameworks were used and add link to deployed project if there is one
 
 Goals for Wed:
-- [ ] Pull Request created before lunch
-- [ ] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
+- [X] Pull Request created before lunch
+- [X] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
 
 Goals for Thursday:
 - [ ] Pull Request created before lunch

@@ -4,21 +4,35 @@ import experiments2 from '../img/experiments2.png';
 import experiments3 from '../img/experiments3.png';
 import experiments4 from '../img/experiments4.png';
 
+const images = [
+  { id: 1, image: experiments1 },
+  { id: 2, image: experiments2 },
+  { id: 3, image: experiments3 },
+  { id: 4, image: experiments4 },
+  { id: 1, image: experiments1 },
+  { id: 2, image: experiments2 },
+  { id: 3, image: experiments3 },
+  { id: 4, image: experiments4 }
+];
+
 const Experiments = () => {
-    return (
-      <section className="experiments">
-        <div className="slider">
-            <div clasName="card" data-card="1"><img src={experiments1} /></div>
-            <div clasName="card" data-card="2"><img src={experiments2} /></div>
-            <div clasName="card" data-card="3"><img src={experiments3} /></div>
-            <div clasName="card" data-card="4"><img src={experiments4} /></div>
-            <div clasName="card" data-card="1"><img src={experiments1} /></div>
-            <div clasName="card" data-card="2"><img src={experiments2} /></div>
-            <div clasName="card" data-card="3"><img src={experiments3} /></div>
-            <div clasName="card" data-card="4"><img src={experiments4} /></div>
+  return (
+    <section className="experiments">
+      <div className="slider">
+        <div className="cards">
+          {images.map(img => <Card key={img.id} image={img.image} />)}
         </div>
-      </section>
+      </div>
+    </section>
+  )
+};
+
+class Card extends React.Component {
+  render() {
+    return (
+      <div className="card"><img src={this.props.image} alt="experiments"/></div>
     )
-};  
+  }
+};
 
 export default Experiments;

@@ -4,11 +4,12 @@ import logo from '../img/croissant-logo.png'
 
 const Footer = () => {
     return (
-      <footer className="footer">
-        <div className="team"><img src={team} /></div>
+      <footer className="footer-container">
+        <div className="team"><img src={team} alt="croissant-team" /></div>
         <div className="footerbar">
-          <div classsName="footer-logo"><img src={logo} alt="logo" height="33px" /></div>
-          <div classsName="copyright"><p>2019 Croissant - Made with ❤️ in 🌍</p></div>
+          <div className="footer-logo"><img src={logo} alt="logo" height="33px" /></div>
+          <div className="copyright"><p>2019 Croissant - Made with <span role="img" area-label="heart">❤️</span> in <span role="img" are-label="earth">🌍</span></p></div>
+          {/* <img className='footerImage' src={footerImage}></img> */}
         </div>
       </footer>
     )

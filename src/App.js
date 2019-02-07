@@ -1,4 +1,6 @@
 import React from 'react';
+import 'whatwg-fetch';
+
 import Navbar from './Components/Navbar.js';
 import Hero from './Components/Hero.js';
 import Customers from './Components/Customers.js';

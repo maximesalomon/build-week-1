@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import dashboard from '../img/dashboard.png';
 
+
 let heroContent = {
   tagline: "Actually launch growth experiments",
   description: "We empower tech companies to prioritize, build & analyse growth experiments by providing them with on-demand tech, design & marketing ressources.",

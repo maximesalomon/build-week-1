@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+
 import logo from '../img/croissant-logo.png';
 import hamburger from '../img/hamburger.png'
 

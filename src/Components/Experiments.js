@@ -9,10 +9,10 @@ const images = [
   { id: 2, image: experiments2 },
   { id: 3, image: experiments3 },
   { id: 4, image: experiments4 },
-  { id: 1, image: experiments1 },
-  { id: 2, image: experiments2 },
-  { id: 3, image: experiments3 },
-  { id: 4, image: experiments4 }
+  { id: 5, image: experiments1 },
+  { id: 6, image: experiments2 },
+  { id: 7, image: experiments3 },
+  { id: 8, image: experiments4 }
 ];
 
 const Experiments = () => {
